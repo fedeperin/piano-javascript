@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.piano {
+    display: flex;
+    box-shadow: 0 0 7px #000;
+    overflow: hidden;
+    position: fixed;
+}
+
+.key {
+    font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.key.white {
+    width: 60px;
+    height: 190px;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: border .5s ease;
+}
+
+.key.white:hover {
+    border-bottom: 30px solid #111;
+}
+
+.key.black {
+    background: #000;
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    transition: transform .3s ease;
+}
+
+.key.black:hover {
+    transform: translateY(-10px) scaleY(0.8);
+}
+
+.key.black.key-1 {
+    margin-left: 44px;
+}
+
+.key.black.key-2 {
+    margin-left: 104px;
+}
+
+.key.black.key-3 {
+    margin-left: 224px;
+}
+
+.key.black.key-4 {
+    margin-left: 284px;
+}
+
+.key.black.key-5 {
+    margin-left: 344px;
+}
